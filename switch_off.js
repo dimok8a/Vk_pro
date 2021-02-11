@@ -66,21 +66,35 @@ var header = document.getElementById("page_header_wrap"); // Шапка вк
     audio.autoplay = false;
     audio.volume = .3;
 
+    var audio2 = new Audio('https://zvukipro.com/uploads/files/2020-12/1609052060_elevator-music-vanoss-gaming-background-music.mp3'); // Звук при записи голосовых
+    audio2.autoplay = false;
+    audio2.volume = .3;
+
+
     setInterval(function () {
         try {
             if (window.location.search.indexOf('sel') !== -1) {
 
-                if (document.querySelector('.im-page--typing').classList.contains('im-page--typing_vis') == true) { // Звук печати
-                    audio.play();
+                if (document.querySelector('.im-page--typing').classList.contains('im-page--typing_vis') == true) { 
+                    if(document.querySelector('._im_typing_name').innerText.indexOf('записывает') !== -1){ // Звук при записи голосовых
+                        audio2.play(); // Если записывают голосовое, то запускаем музыку при голосовых 
+                        audio.pause(); // И останавливаем звук при печати
+                    } else {
+                        audio2.pause(); // Если печатают, то останавливаем музыку при голосовых
+                        audio.play()  // И запускаем музыку печати
+                    }
                 }
                 if (document.querySelector('.im-page--typing').classList.contains('im-page--typing_vis') == false) {
-                    audio.pause();
+                    audio.pause();  
+                    audio2.pause(); 
                 }
             } else {
                 audio.pause();
+                audio2.pause();
             }
         } catch (e) {}
     }, 100)
+
 
 
 
