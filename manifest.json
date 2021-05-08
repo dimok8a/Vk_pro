@@ -10,6 +10,7 @@
   "content_scripts": [ 
   	{
   "js": [ "switch_off.js" ],
+  "css": [ "style.css" ],
   "matches":[ "*://vk.com/*", "*://*.vk.com/*" ],
   "run_at": "document_idle"
  } 
