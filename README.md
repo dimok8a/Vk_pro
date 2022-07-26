@@ -1,7 +1,7 @@
 # Vk_pro
 Extension for Vk.com with new icons and sounds
 # Install
-Open this page
+Open this page  
 Google:
 ### `chrome://extensions/`
 Yandex: 
