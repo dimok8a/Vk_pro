@@ -7,5 +7,5 @@ Google:
 Yandex: 
 ### `browser://extensions/`
 Turn on `developer mode` in the upper right corner  
-Click `Load unpaced`   
+Click `Load unpacked`   
 Load this extension  
