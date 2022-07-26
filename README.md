@@ -6,6 +6,6 @@ Google:
 ### `chrome://extensions/`
 Yandex: 
 ### `browser://extensions/`
-Turn on `developer mode` in the upper right corner
+Turn on `developer mode` in the upper right corner \n
 Click `Load unpaced` 
 Load this extension
