@@ -4,6 +4,7 @@ Extension for Vk.com with new icons and sounds
 Open this page  
 Google:  `chrome://extensions/`  
 Yandex: `browser://extensions/`  
+###
 Turn on `developer mode` in the upper right corner  
 Click `Load unpacked`   
 Load this extension  
