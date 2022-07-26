@@ -1,19 +1,26 @@
 {
   "description": "Alternative design VK.com",
   "manifest_version": 2,
-  "name": "vk_Pro",
+  "name": "VK++",
   "permissions": [ "tabs", "http://vk.com/*", "https://vk.com/*", "http://*.vk.com/*", "https://*.vk.com/*", "storage" ],
   "version": "4.0",
     "browser_action": {
         "default_icon": "icon1.png"
     },
-  "content_scripts": [ 
+  "web_accessible_resources": [
+    "makeCheckboxes.js",
+    "designChanges.js",
+    "cssClasses.js",
+    "audios.js",
+    "index.js"
+  ],
+  "content_scripts": [
   	{
-  "js": [ "switch_off.js" ],
-  "css": [ "style.css" ],
-  "matches":[ "*://vk.com/*", "*://*.vk.com/*" ],
-  "run_at": "document_idle"
- } 
+    "js": [ "main.js"],
+    "css": [ "style.css" ],
+    "matches":[ "*://vk.com/*", "*://*.vk.com/*" ],
+    "run_at": "document_idle"
+    }
 ]
   
 }
